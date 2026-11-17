@@ -29,6 +29,11 @@ def exact(stream, count):
 def worker_command(mode, remote=False):
     if not remote:
         return [str(ROOT / 'canvas_worker'), MODEL, mode]
+    # A JY formation has no SSH between members; any stdio pipe to a remote
+    # `canvas_worker ... tail` works, e.g. an iroh tunnel (see jy/README.md).
+    remote_cmd = os.environ.get('DIFFUSION_REMOTE_CMD')
+    if remote_cmd:
+        return shlex.split(remote_cmd)
     host = os.environ.get('DIFFUSION_SSH_HOST')
     directory = os.environ.get('DIFFUSION_REMOTE_DIR')
     if not host or not directory:
@@ -141,7 +146,7 @@ class Experiment:
         self.workers = []
         self.output = output
         self.results = {'decoder': 'greedy, cfg=0, confidence-ranked fixed transfers, no prompt KV cache',
-                        'transport': 'persistent SSH stdio, raw native activation descriptor + F32 payload',
+                        'transport': os.environ.get('DIFFUSION_TRANSPORT_LABEL', 'persistent SSH stdio') + ', raw native activation descriptor + F32 payload',
                         'runs': [], 'parity': []}
         try:
             for mode, remote in [('full', False), ('head', False), ('tail', True)]:
