@@ -1,0 +1,34 @@
+# Runtime environments and builds
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+home/
+models/
+lib/
+canvas_worker
+*.o
+*.dylib
+*.so
+*.bin
+*.gguf
+*.safetensors
+*.pem
+*.key
+.env
+.env.*
+
+# Experiment outputs can contain model paths, device information and generated code.
+*.jsonl
+*.log
+*.stderr
+*.pid
+*-results.json
+canvas-*.json
+probe32-*.json
+wan-*.json
+validation.json
+validation-summary.txt
+results.json
+source-snapshot/

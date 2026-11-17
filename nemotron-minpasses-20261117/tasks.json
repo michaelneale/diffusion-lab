@@ -1,0 +1,13 @@
+{
+  "boxes": "A warehouse has 48 boxes. It ships three quarters of them, then receives 18 more boxes. It divides all boxes now present equally between 5 trucks. How many boxes go on each truck? Show the arithmetic and final answer in at most 60 words.",
+  "discount": "A customer buys 3 notebooks at $17 each and 2 pens at $9 each. A 20% discount applies to the whole purchase. They pay with $100. What change should they receive? Show the arithmetic in at most 60 words.",
+  "travel": "A train travels 120 km at 60 km/h, stops for 15 minutes, then travels 45 km at 90 km/h. What is the total elapsed time in minutes? Show the arithmetic in at most 60 words.",
+  "dedup": "Write a Python function unique_in_order(xs) that returns a list with duplicate values removed while preserving first occurrence order. Inputs can include unhashable lists. Give the function and exactly two assert examples, including an example with nested lists. No prose.",
+  "brackets": "Write Python function balanced(s) that returns True exactly when round parentheses in s are balanced. Ignore all other characters. A closing parenthesis before its matching opener is invalid. Return only the function, with no examples or prose.",
+  "gcd": "Write Python function gcd(a, b) using the Euclidean algorithm. Handle negative inputs and return 0 for gcd(0, 0). No imports. Return only the function, no examples or prose.",
+  "reason": "A shop starts with 23 apples, sells 7, receives 12, then packs all remaining apples equally into 4 boxes. How many apples are in each box? Show the arithmetic briefly and give the final answer.",
+  "extract": "Return only a JSON object with keys name, count, enabled. Facts: the name is cedar, the count is 17, and enabled is false. Do not add other keys or prose.",
+  "prose": "Explain how a hash table works to a beginning programmer in 180 to 240 words. Cover hashing, collisions, resizing, and a concrete example. No code. Answer directly without internal reasoning.",
+  "list32": "Write exactly 32 lines, no heading, no fences, no explanation. For each integer 1 through 32, write the line \"Item N: status pending review.\" replacing N with that integer. Include all 32 items in order.",
+  "list100": "Write exactly 100 lines, no heading, no fences, no explanation. For each integer 1 through 100, write the line \"Item N: status pending review.\" replacing N with that integer. Include all 100 items in order."
+}

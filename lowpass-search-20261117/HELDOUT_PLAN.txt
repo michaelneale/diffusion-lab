@@ -1,0 +1,1 @@
+Before heldout execution: Gemma entropy-bound .1, canvas256; fixed comparison caps48(reference),16(dev-selected),4(aggressive control). LLaDA2.2 default32steps/.5/16post. Seven new prompts in tasks.json were frozen before any generation. No heldout result-driven retuning in this batch.
