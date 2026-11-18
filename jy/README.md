@@ -20,8 +20,5 @@ Both sides share a per-run `IROH_SECRET`, so the head derives the ticket with
 prefix stop, thresholds 0.8/0.6/0.4 split and 0.6 local, over the tasks and
 checks in `fair_tasks.py`. Run the same tasks against a Skippy split for comparison.
 
-`canvas_worker` is the original research build (mesh `1ea1ecf7`, Skippy ABI
-0.1.79, macOS arm64), published as the `jy-wan-bundle-1` release asset
-`canvas-worker-darwin-arm64-mesh1ea1ecf7.tar.gz`, SHA256
-`92eb7394dd67f036f88e4a297063c45be209622d65a2fd76e4e8a1974e43c81f`.
-It is a research binary, not a supported release.
+`canvas_worker` is the research build from `llada-split-20261117` (mesh `1ea1ecf7`,
+Skippy ABI 0.1.79); build it from that tree. No prebuilt binary is published.
